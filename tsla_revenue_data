@@ -21,4 +21,4 @@ for row in table.find("tbody").find_all("tr"):
 
 tsla_df = pd.DataFrame(revenue_data)
 
-tsla_df.tail(5)
+tsla_df.tail()
