@@ -21,4 +21,4 @@ for row in table.find("tbody").find_all("tr"):
 
 gme_df = pd.DataFrame(gme_revenue)
 
-gme_df.tail(5)
+gme_df.tail()
