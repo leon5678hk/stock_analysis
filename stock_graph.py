@@ -10,7 +10,7 @@ def make_graph(data, company_name):
 
     # title and labels
     plt.title(f"{company_name} Stock Price Over Time", fontsize=16)
-    plt.xlabel('Date', fontsize=12)
+    plt.xlabel('Year', fontsize=12)
     plt.ylabel('Stock Price (USD)', fontsize=12)
     plt.legend()
     plt.grid(axis='y', linestyle='--', alpha=0.7)
