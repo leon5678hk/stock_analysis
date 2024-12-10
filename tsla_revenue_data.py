@@ -11,13 +11,13 @@ soup = BeautifulSoup(html_data, "html.parser")
 
 table = soup.find("table", class_="table")
 
-revenue_data = []
+tsla_data = []
 for row in table.find("tbody").find_all("tr"):
     columns = row.find_all("td")
     year = columns[0].get_text(strip=True)
     revenue = columns[1].get_text(strip=True)
     change = columns[2].get_text(strip=True)
-    revenue_data.append({"Year": year, "Revenue": revenue, "Change": change})
+    tsla_data.append({"Year": year, "Revenue": revenue, "Change": change})
 
 tsla_df = pd.DataFrame(revenue_data)
 
